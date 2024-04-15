@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Məlumat Cədvəli</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+    <header>
+        <h1>Məlumat Cədvəli</h1>
+        <button id="addNewButton" class="btn btn-primary">Yeni Məlumat Əlavə Et</button>
+    </header>
+    <main>
+        <table id="myTable" class="table table-striped table-bordered">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Ad</th>
+                    <th>Soyad</th>
+                    <th>Yaş</th>
+                    <th>Əməliyyatlar</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </main>
+    <div id="formModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2 id="formModalTitle">Yeni Məlumat Əlavə Et</h2>
+            <form id="dataForm" class="form">
+                <div class="form-group">
+                    <label for="adInput">Ad:</label>
+                    <input type="text" id="adInput" name="adInput" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="soyadInput">Soyad:</label>
+                    <input type="text" id="soyadInput" name="soyadInput" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="yasInput">Yaş:</label>
+                    <input type="number" id="yasInput" name="yasInput" class="form-control" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Yadda Saxla</button>
+            </form>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
